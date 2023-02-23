@@ -1,7 +1,8 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">Rupiah</router-link> |
+    <router-link to="/bitcoin">Bitcoin</router-link>
   </nav>
   <router-view/>
 </template>

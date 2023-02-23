@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import BitCoin from "../views/BitCoin.vue"
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/bitcoin',
+    name: 'bitcoin',
+    component: BitCoin
   },
   {
     path: '/about',
@@ -15,7 +22,8 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-    }
+    },
+   
   }
 ]
 
